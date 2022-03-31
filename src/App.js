@@ -3,7 +3,7 @@ import { Navroute } from "./Routes/NavRoute";
 
 export default function App() {
   return (
-    <div classNameName="App">
+    <div className="App">
       <Navroute />
     </div>
   );
