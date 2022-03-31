@@ -9,7 +9,7 @@ const Navbar = ()=>{
         <div className="navbar">
             <div className="navbar-logo">
             <Link to="/" classNameName="nav-brand">
-             <img src="/assets/cosmoshop_logo.svg" />
+             <img src="/assets/cosmoshop_logo.svg" alt="logo"/>
             </Link>
             </div>
             <div className="search-container">

@@ -48,23 +48,23 @@ const [categories, setCategories] = useState([]);
             </div>
 
             <div className="feat-img">
-                <img src="/assets/logo/isro_logo.svg" />
+                <img src="/assets/logo/isro_logo.svg" alt="logo" />
             </div>
 
             <div className="feat-img">
-                <img src="/assets/logo/nasa_logo.svg" />
+                <img src="/assets/logo/nasa_logo.svg" alt="logo"/>
             </div>
 
             <div className="feat-img">
-                <img src="/assets/logo/esa_logo.svg" />
+                <img src="/assets/logo/esa_logo.svg" alt="logo"/>
             </div>
 
             <div className="feat-img">
-                <img src="/assets/logo/russia_logo.png" />
+                <img src="/assets/logo/russia_logo.png" alt="logo"/>
             </div>
 
             <div className="feat-img">
-                <img src="/assets/logo/spacex_logo.svg" />
+                <img src="/assets/logo/spacex_logo.svg" alt="logo"/>
             </div>
 
         </div>
