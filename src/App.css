@@ -1,51 +1,38 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://cosmicui.netlify.app/components/component.css");
+
+:root {
+    font-family: 'Exo 2', sans-serif;
+    --blue-100:#00b1e6;
+    --blue-500: #002733;
+    --grey: #f3f4f6;
+    --medium-grey: #cccccc;
+    --grey-100: #fafeff;
+    --gradient-light-blue:#2173d6ce;
+    --gradient-dark-blue:#195373e3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin:0;
+    padding:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* card background : fdfeff */
+a,
+button {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
 }
 
-.App-header {
-  background-color: #22201c;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
+body {
+    letter-spacing: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-primary {
+    background-color: var(--blue-100);
 }
 
-.brand-title {
-  font-size: 3rem;
-  color: #d9d9d9;
-}
-
-.brand-title span {
-  color: #ffde59;
-}
-
-.brand-description {
-  font-size: 1.4rem;
-}
-
-.links {
-  display: flex;
-}
-
-.links a {
-  color: #d9d9d9;
-  font-size: 1.2rem;
-  margin: 1rem;
+.btn-primary-outline {
+    border: 1px solid var(--blue-100);
+    color: var(--blue-100);
 }
