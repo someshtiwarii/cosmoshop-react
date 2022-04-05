@@ -2,7 +2,7 @@ import { Navbar } from "../../components/Navbar/Navbar";
 
 const Cart = () => {
   return (
-    <div classNameName="page-wrapper">
+    <div className="page-wrapper">
       <Navbar />
 
       <section>

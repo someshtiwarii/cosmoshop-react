@@ -1,14 +1,16 @@
 import { Navbar } from "../../components/Navbar/Navbar";
+import { Filters } from "../../components/Filters/Filters";
+import { ProductList } from "../../components/ProductList/ProductList";
+import "./Products.css" ;
 
 const Products = () => {
   return (
-    <div classNameName="page-wrapper">
+    <div>
       <Navbar />
-
-      <section>
-        <h1>Product Page</h1>
-      </section>
-
+      <div class="main-section">
+        <Filters/>
+        <ProductList/>
+      </div>
     </div>
   );
 };
