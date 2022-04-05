@@ -18,11 +18,7 @@ const Navroute = () => {
       <Route path="/Login" element={<Login />} />
       <Route path="/wishlist" element={<Wishlist />} />
       <Route path="/mockman" element={<Mockman />} />
-      <Route path="*"
-      element={
-        <h1>Oops!</h1>
-      }
-    />
+      <Route path="*" element={<h1>Oops!</h1>} />
     </Routes>
   );
 };
