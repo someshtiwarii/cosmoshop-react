@@ -1,0 +1,53 @@
+aside {
+    padding-top: 1rem;
+    box-shadow: 5px 5px 10px var(--grey);
+}
+
+.left-tab {
+    margin: 0 1rem 0.5rem 1rem;
+    padding: 0.5rem;
+}
+
+.filters-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-range {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-tab input {
+    width: 100%;
+}
+
+.left-tab h3 {
+    margin-bottom: 0.5rem;
+}
+
+
+@media only screen and (max-width: 860px) {
+
+    .left-tab {
+        margin: 0 0.5rem 0.25rem 0.5rem;
+        padding: 0.25rem;
+        font-size: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+
+    aside {
+        padding-top: 0.5rem;
+    }
+
+    .left-tab {
+        margin: 0;
+        padding: 0.1rem;
+        font-size: 70%;
+    }
+
+}

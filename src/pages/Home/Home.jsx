@@ -102,15 +102,13 @@ const [categories, setCategories] = useState([]);
 
                     <div className="right-part">
                         <div className="card-body">
-                            <h3>NEW ARRIVAL</h3>
-                            
+                            <h3>NEW ARRIVAL</h3> 
                             <div className="card-info">Regular Spacesuit (White)
                             </div>
                            
                         </div>
                         <div className="card-btn">
                             <button className="btn btn-primary"><Link to="/Products">Buy Now</Link></button>
-                           
                         </div>
                     </div>
                 </div>

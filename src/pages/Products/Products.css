@@ -1,0 +1,25 @@
+.main-section {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+}
+
+@media only screen and (max-width: 860px) {
+
+    .main-section {
+        grid-template-columns: 10rem 1fr;
+    }
+ 
+}
+
+@media only screen and (max-width: 390px) {
+
+    .main-section {
+        grid-template-columns: 40vw auto;
+    }
+
+    .main-section>aside {
+        padding-top: 0.5rem;
+    }
+
+   
+}

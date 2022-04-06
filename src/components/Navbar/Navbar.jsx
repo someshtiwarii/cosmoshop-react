@@ -8,7 +8,7 @@ const Navbar = ()=>{
         <nav>
         <div className="navbar">
             <div className="navbar-logo">
-            <Link to="/" classNameName="nav-brand">
+            <Link to="/" className="nav-brand">
              <img src="/assets/cosmoshop_logo.svg" alt="logo"/>
             </Link>
             </div>
