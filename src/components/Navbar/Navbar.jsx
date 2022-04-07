@@ -1,8 +1,10 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../context/authContext";
 
 const Navbar = ()=>{
 
+    const { isAuth, setIsAuth } = useAuth();
     return(
 
         <nav>
@@ -17,8 +19,25 @@ const Navbar = ()=>{
                 <input type="text" id="search" name="search" placeholder="Search" className="search-input" />
             </div>
             <div className="cta">
-                <button className="btn btn-primary"><Link to="/Login">Login</Link></button>
-
+           
+        {!isAuth ? (
+            <Link to="/login" className="icon login" title="Login">
+              <button class="btn btn-primary">Login</button>
+            </Link>
+          ) : (
+            <Link
+              to="/"
+              className="icon logout"
+              title="Logout"
+              onClick={() => {
+                localStorage.removeItem("token");
+                setIsAuth(false);
+              }}
+            >
+              <button class="btn btn-primary">Logout</button>
+            </Link>
+          )}
+    
                 <div className="badge navbar-icon">
                     <Link to="/Wishlist"><i className="fas fa-heart fa-2x"></i></Link>
                     <div className="notification notification-badge">
