@@ -14,7 +14,7 @@ const SignUp = () => {
     const { name, value } = e.target;
     setSignupInput({ ...signupInput, [name]: value });
 
-    if (name === "confirmpswd") {
+    if (name === "confirmPswd") {
       setpswdMatch(() => (value === signupInput.pswd ? true : false));
     }
   };
