@@ -22,12 +22,13 @@ const Login = () => {
 
     try {
       const { data } = await loginService(loginInput);
+      localStorage.setItem("isAuth", true);
 
       localStorage.setItem("token", data.encodedToken);
       setToken(data.encodedToken);
       setLoginInput({ email: "", password: "" });
       setIsAuth(true);
-      navigate("/");
+      navigate(-1);
     } catch (err) {
       console.log(err);
     }
@@ -82,11 +83,10 @@ const Login = () => {
                       <p>Remember me</p>
                   </div>
 
-                  <a href="#">Forgot your password?</a>
+                  <Link to="/signup">Forgot your password?</Link>
               </div>
 
               <button className="btn btn-primary" type="submit">Login</button>
-
 
               </form>    
               </div>

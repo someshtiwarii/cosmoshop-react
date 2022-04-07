@@ -6,6 +6,7 @@ import { SignUp } from "../pages/SignUp/SignUp";
 import { Login } from "../pages/Login/Login";
 import { Wishlist } from "../pages/Wishlist/Wishlist";
 import Mockman from "mockman-js";
+import { PrivateRoute } from "./PrivateRoute";
 
 
 const Navroute = () => {
@@ -13,10 +14,17 @@ const Navroute = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
-      <Route path="/cart" element={<Cart />} />
-      <Route path="/Signup" element={<SignUp />} />
-      <Route path="/Login" element={<Login />} />
-      <Route path="/wishlist" element={<Wishlist />} />
+      <Route
+      path="/wishlist"
+      element={
+        <PrivateRoute>
+          <Wishlist />
+        </PrivateRoute>
+      }
+    ></Route>
+    <Route path="/cart" element={<Cart />} />
+    <Route path="/Signup" element={<SignUp />} />
+    <Route path="/Login" element={<Login />} />
       <Route path="/mockman" element={<Mockman />} />
       <Route path="*" element={<h1>Oops!</h1>} />
     </Routes>
