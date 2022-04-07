@@ -13,4 +13,4 @@ const Signup = () => {
   );
 };
 
-export { Signup };
+export { SignUp };
