@@ -2,9 +2,6 @@
 
 CosmoShop is an e-commerce web application where you can buy everything needed for your first space travel.
 
-## Installation
-
-Clone the repository or download the repository as zip and unzip it in your local machine. You can use a code editor like VS code to edit the source code. Run the command `yarn install` to install all the dependency npm packages. Once the installation is done, you can run the command `yarn start` to start the application.
 
 ## Features
 
