@@ -1,10 +1,13 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
+import { useWishlist } from "../../context/wishlistContext";
 
 const Navbar = ()=>{
 
     const { isAuth, setIsAuth } = useAuth();
+    const { wishlist } = useWishlist();
+
     return(
 
         <nav>
@@ -41,7 +44,7 @@ const Navbar = ()=>{
                 <div className="badge navbar-icon">
                     <Link to="/Wishlist"><i className="fas fa-heart fa-2x"></i></Link>
                     <div className="notification notification-badge">
-                        <span>2</span>
+                       {isAuth ? <span>{wishlist.length}</span> : 0} 
                     </div>
                 </div>
 
