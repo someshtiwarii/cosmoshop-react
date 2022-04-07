@@ -1,5 +1,5 @@
-@import url("../Login/Login.css");
+@import url("../Login/Login.css")
 
-.login-section{
-    top: 55%;
-}
+.login-section(
+    top:55%;
+)

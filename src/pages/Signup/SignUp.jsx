@@ -45,13 +45,11 @@ const SignUp = () => {
       <main>
 
       <div className="login-section">
-      
-
+    
           <div className="login-heading">
               <h2>Sign Up</h2>
           </div>
           
-
           <div className="login-input">
           <form onSubmit={signupHandler}>
 
@@ -123,7 +121,6 @@ const SignUp = () => {
                       <p>I accept all Terms & Conditions</p>
                   </div>
               </div>
-
 
               {pswdMatch ? (
                 <button className="btn btn-primary" type="submit">
