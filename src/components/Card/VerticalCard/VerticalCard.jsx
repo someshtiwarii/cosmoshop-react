@@ -1,11 +1,18 @@
 import "./VerticalCard.css";
 import { useWishlist } from "../../../context/wishlistContext";
+import { useCart } from "../../../context/cartContext";
+import { useAuth } from "../../../context/authContext";
 
 const VerticalCard =({product})=>{
 
     const {title, price, image ,discount, discountPrice, rating, _id} = product;
     const { wishlist, toggleWishlist } = useWishlist();
+    const { cart, addToCartHandler } = useCart();
+    const { navigate } = useAuth();
+
+
     const itemInWishlist = wishlist.find((item) => item._id === _id);
+    const itemInCart = cart.find((item) => item._id === _id);
 
     return(
 
@@ -41,7 +48,13 @@ const VerticalCard =({product})=>{
                         </div>
                     </div>
                     <div className="card-btn">
-                        <button className="btn btn-primary">Add to Cart</button>
+                    <button
+                        className="btn btn-primary"
+                        onClick={() =>
+                        itemInCart ? navigate("/cart") : addToCartHandler(product)
+                        }>
+                        {itemInCart ? "Go To Cart" : "Add To Cart"}
+                  </button>
                     </div>
                 </div>
             </div>

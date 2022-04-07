@@ -22,7 +22,15 @@ const Navroute = () => {
         </PrivateRoute>
       }
     ></Route>
-    <Route path="/cart" element={<Cart />} />
+
+      <Route
+      path="/cart"
+      element={
+        <PrivateRoute>
+          <Cart />
+        </PrivateRoute>
+      }>
+      </Route>
     <Route path="/Signup" element={<SignUp />} />
     <Route path="/Login" element={<Login />} />
       <Route path="/mockman" element={<Mockman />} />
