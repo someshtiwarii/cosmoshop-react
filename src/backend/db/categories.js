@@ -32,4 +32,9 @@ export const categories = [
     categoryName: "Skincare",
     imgURL: "/assets/skin-category.jpg",
   },
+   {
+    _id: uuid(),
+    categoryName: "Fashion",
+    imgURL: "/assets/skin-category.jpg",
+  },
 ];
